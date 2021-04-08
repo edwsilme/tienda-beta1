@@ -1,0 +1,137 @@
+* {margin:0; padding:0}
+
+body {
+	background-color: #e6ffff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style")
+ 
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            "@-ms-viewport{width:auto!important}"
+        )
+    )
+ 
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+
+#logo {
+	margin-left: 0;
+	margin-top: 1em;
+	width: 50em;
+	max-width: 100%;
+	height: 10em;
+}
+
+
+@-webkit-keyframes cambia_color {
+    0% { color: #fff; text-shadow: 1px 1px 1px #000; }
+    90% { color: #03f; text-shadow: 1px 1px 1px #fff; }
+}
+
+h1 {
+	color: #00066;
+	-webkit-animation-name: cambia_color;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-duration: 10s;
+	font-family: verdana;
+	font-size: 3em;
+	margin: 50px 40px 10px 70px;
+	text-align: center;
+	text-decoration: ;
+}
+
+.tile {
+}
+
+div#content {
+    margin: 5px;
+    padding: 10px;
+    background-color: #fffff9;
+}
+
+#img {
+	margin-left: 1em;
+	margin-top: 1em;
+	width: 10em;
+	height: 10em;
+}
+
+#tab {
+}
+
+#row {
+	text-align: center;
+}
+
+#sub {
+	color: #00066;
+	font-family: initial;
+	font-size: 2em;
+	margin: 50px 40px 10px 70px;
+	text-align: center;
+	text-decoration: ;
+}
+
+.contenedor-tabla{
+	display: table;
+}
+
+.contenedor-fila{
+	display: table-row;
+}
+
+.contenedor-columna{
+	display: table-cell;
+}
+
+label {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ 
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #333;
+}
+
+div#footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
